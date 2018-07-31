@@ -99,7 +99,6 @@ def winner(board)
 end
 
 def play(board)
-  display_board(board)
   until over?(board) do
     turn(board)
     if won?(board) 
