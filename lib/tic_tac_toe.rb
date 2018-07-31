@@ -93,7 +93,7 @@ end
 
 def winner(board)
   if won?(board) 
-    binding.pry
+    
     board[won?(board)[0]]
   end
 end
@@ -101,6 +101,7 @@ end
 def play(board)
   until over?(board) do
     turn(board)
+  end
     if won?(board) 
       win = winner(board)
       puts "Congratulations #{win}!"
