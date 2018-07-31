@@ -103,9 +103,9 @@ def play(board)
   until over?(board) do
     turn(board)
     if won?(board) 
-      winner = winner(board)
+      win = winner(board)
       binding.pry
-      puts "Congratulations #{winner}!"
+      puts "Congratulations #{win}!"
     elsif draw?(board)
       puts "Cat's Game!"
     end
