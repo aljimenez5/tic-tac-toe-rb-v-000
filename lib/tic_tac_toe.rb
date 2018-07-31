@@ -102,7 +102,6 @@ def play(board)
     turn(board)
     if won?(board) 
       win = winner(board)
-      binding.pry
       puts "Congratulations #{win}!"
     elsif draw?(board)
       puts "Cat's Game!"
